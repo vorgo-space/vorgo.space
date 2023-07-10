@@ -15,6 +15,14 @@ dependencies:
     specifier: ^3.0.24
     version: 3.0.24(postcss@8.4.24)
 
+devDependencies:
+  prettier:
+    specifier: ^3.0.0
+    version: 3.0.0
+  prettier-plugin-astro:
+    specifier: ^0.10.0
+    version: 0.10.0
+
 packages:
 
   /@ampproject/remapping@2.2.1:
