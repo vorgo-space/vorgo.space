@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fmt": "prettier --config prettier.config.cjs --write '**/*.{astro,js,ts,json,md}'",
-    "fmt:check": "prettier --config prettier.config.cjs --check '**/*.{astro,js,ts,json,md}'"
+    "fmt": "prettier --config prettier.config.cjs --write .",
+    "fmt:check": "prettier --config prettier.config.cjs --check ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.1.3",
