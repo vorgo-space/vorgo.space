@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'gilmer-light';
+  src:
+    local('GilmerLight'),
+    url('/fonts/Gilmer-Font/Gilmer\ Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'gilmer-regular';
+  src:
+    local('GilmerRegular'),
+    url('/fonts/Gilmer-Font/Gilmer\ Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'gilmer-heavy';
+  src:
+    local('GilmerHeavy'),
+    url('/fonts/Gilmer-Font/Gilmer\ Heavy.otf') format('opentype');
+}
