@@ -1,18 +1,18 @@
 ---
 export interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title } = Astro.props;
 const { description } = Astro.props;
 ---
 
-<div class="relative h-72 w-96 pl-4 border border-solid border-white/10 rounded-2xl">
-    <div class="pl-5 pr-6 py-9">
-        <dt class="text-3xl font-semibold leading-7 font-gilmer-heavy">{title}</dt>
-        <dd class="mt-2 text-base leading-7 font-gilmer-regular">
-            {description}
-        </dd>
+<div class="relative h-80 border border-solid border-white/5 rounded-2xl">
+  <div class="pr-6 pt-9 pl-4 h-full grid grid-rows-3">
+    <div class="text-2xl font-gilmer-heavy">{title}</div>
+    <div class="text-base text-white/70 font-gilmer-regular row-span-2">
+      {description}
     </div>
+  </div>
 </div>
