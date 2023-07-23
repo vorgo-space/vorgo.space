@@ -1,117 +1,51 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../layouts/Card.astro";
+import Layout from '../layouts/Layout.astro';
+import Card from '../layouts/Card.astro';
 ---
 
 <Layout title="Provencraft Community">
-  <main
-        class="grid min-h-full place-items-center py-24 sm:py-32 lg:px-8 bg-[#001D3D] px-6"
-    >
+  <main class="grid min-h-full place-items-center py-24 sm:py-32 lg:px-8 bg-[#010D1A] px-6">
     <div id="center" class="text-center text-white">
-            <!-- </div> -->
-            <div class="py-24 sm:py-32">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div class="mx-auto max-w-2xl lg:text-center">
-                        <p
-                            class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl"
-                        >
-                            What's in it for me?
-                        </p>
-                        <p class="mt-6 text-lg leading-8">
-                            Here is the list of awesome reasons for you to join
-                            our community to unlock new adventures and
-                            opportunities
-                        </p>
-                    </div>
-                    <div
-                        class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl"
-                    >
-                        <dl
-                            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left"
-                        >
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    Personal and professional growth
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    You'll have access to various resources and
-                                    opportunities that will help you develop
-                                    your skills, knowledge, and experience.
-                                    Whether through workshops, events,
-                                    mentorship, or collaboration, you'll be able
-                                    to grow personally and professionally.
-                                </dd>
-                            </div>
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    Opportunities to learn and explore
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions.
-                                </dd>
-                            </div>
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    A supportive and inclusive environment
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals.
-                                </dd>
-                            </div>
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    Develop your personal brand
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities.
-                                </dd>
-                            </div>
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    Leadership and mentorship opportunities
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture.
-                                </dd>
-                            </div>
-                            <div class="relative pl-16">
-                                <dt
-                                    class="text-base font-semibold leading-7"
-                                >
-                                    Networking opportunities
-                                </dt>
-                                <dd
-                                    class="mt-2 text-base leading-7"
-                                >
-                                    By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects.
-                                </dd>
-                            </div>
-                            <Card title="Networking opportunities" description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects.">
-                            </Card>
-                        </dl>
-                    </div>
-                </div>
-            </div>
+      <!-- </div> -->
+      <div class="py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">What's in it for me?</p>
+            <p class="mt-6 text-lg leading-8">
+              Here is the list of awesome reasons for you to join our community to unlock new adventures and
+              opportunities
+            </p>
+          </div>
+          <div class="mx-auto mt-16 max-w-3xl sm:mt-20 lg:mt-24 lg:max-w-fit">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left">
+              <Card
+                title="Personal and professional growth"
+                description="You'll have access to various resources and opportunities that will help you develop your skills, knowledge, and experience. Whether through workshops, events, mentorship, or collaboration, you'll be able to grow personally and professionally."
+              />
+              <Card
+                title="Opportunities to learn and explore"
+                description="Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions."
+              />
+              <Card
+                title="A supportive and inclusive environment"
+                description="One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals."
+              />
+              <Card
+                title="Develop your personal brand"
+                description="Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities."
+              />
+              <Card
+                title="Leadership and mentorship opportunities"
+                description="If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture."
+              />
+              <Card
+                title="Networking opportunities"
+                description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects."
+              />
+            </dl>
+          </div>
         </div>
+      </div>
+    </div>
   </main>
 </Layout>
