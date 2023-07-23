@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Pillar from '../components/Pillar.astro';
 ---
 
 <Layout title="Provencraft Community">
@@ -7,13 +8,30 @@ import Layout from '../layouts/Layout.astro';
     <div id="center" class="text-center text-white">
       <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:text-center">
+          <div class="mx-auto max-w-2xl lg:text-center pb-10">
             <p class="text-5xl font-gilmer-heavy">Community <span class="text-[#FF9431]">pillars</span></p>
             <p class="mt-10 text-xl text-white/70 font-gilmer-medium">
-              Focused on these four areas, we foster a culture that prizes innovation, entrepreneurial spirit, quality, and diversity.
+              Focused on these four areas, we foster a culture that prizes innovation, entrepreneurial spirit, quality,
+              and diversity.
             </p>
           </div>
         </div>
+        <Pillar
+          title="Engineering"
+          description="Being part of the engineering community empowers individuals to use technology to solve real-world problems, collaborate with like-minded individuals, and stay up-to-date with new technologies and trends."
+        />
+        <Pillar
+          title="Craftsmanship"
+          description="Promoting craftsmanship culture emphasizes the importance of quality work, attention to detail, and continuous learning while fostering a sense of pride and fulfilment in one's work as individuals strive to create something of lasting value and beauty."
+        />
+        <Pillar
+          title="Entrepreneurship"
+          description="By fostering a culture of entrepreneurship, we empower individuals to pursue their own ventures, create innovative products that drive positive change, and overcome challenges to achieve their goals."
+        />
+        <Pillar
+          title="Diversity"
+          description="Diversity brings a range of perspectives and experiences, which can lead to more innovative and effective problem-solving. When people from different backgrounds and cultures work together, they can bring unique solutions to the table and challenge each other's assumptions, leading to better outcomes."
+        />
       </div>
     </div>
   </main>
