@@ -20,3 +20,9 @@
     local('GilmerHeavy'),
     url('/fonts/Gilmer-Font/Gilmer\ Heavy.otf') format('opentype');
 }
+@font-face {
+  font-family: 'gilmer-medium';
+  src:
+    local('GilmerMedium'),
+    url('/fonts/Gilmer-Font/Gilmer\ Medium.otf') format('opentype');
+}
