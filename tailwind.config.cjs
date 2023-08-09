@@ -8,9 +8,10 @@ module.exports = {
         'gilmer-regular': ['gilmer-regular', 'gilmer-regular'],
         'gilmer-heavy': ['gilmer-heavy', 'gilmer-heavy'],
         'gilmer-medium': ['gilmer-medium', 'gilmer-medium'],
-      }, backgroundImage: {
+      },
+      backgroundImage: {
         'dust-particles': "url('/src/assets/images/dust-particles.svg')",
-      }
+      },
     },
   },
   plugins: [],

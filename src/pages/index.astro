@@ -4,10 +4,10 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Provencraft Community">
-  <main class="grid min-h-full place-items-center py-6 lg:px-8 px-6">
+  <main class="min-h-full py-6 lg:px-8 px-6">
     <div id="center" class="text-center text-white">
       <div class="py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:text-center">
             <p class="text-5xl font-gilmer-heavy">What's <span class="text-[#FF9431]">in it</span> for me?</p>
             <p class="mt-10 text-xl text-white/70 font-gilmer-medium">
@@ -15,33 +15,39 @@ import Card from '../components/Card.astro';
               opportunities
             </p>
           </div>
-          <div class="mx-auto mt-12 sm:mt-20 lg:mt-18 bg-dust-particles bg-[#010D1A] bg-blend-color-dodge">
-            <dl class="grid gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left">
-              <Card
-                title="Personal and professional growth"
-                description="You'll have access to various resources and opportunities that will help you develop your skills, knowledge, and experience. Whether through workshops, events, mentorship, or collaboration, you'll be able to grow personally and professionally."
-              />
-              <Card
-                title="Opportunities to learn and explore"
-                description="Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions."
-              />
-              <Card
-                title="A supportive and inclusive environment"
-                description="One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals."
-              />
-              <Card
-                title="Develop your personal brand"
-                description="Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities."
-              />
-              <Card
-                title="Leadership and mentorship opportunities"
-                description="If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture."
-              />
-              <Card
-                title="Networking opportunities"
-                description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects."
-              />
-            </dl>
+          <div class="relative">
+            <div
+              class="bg-dust-particles bg-[#010D1A] bg-blend-color-dodge bg-no-repeat absolute h-full w-screen -left-72"
+            >
+            </div>
+            <div class="mt-12 sm:mt-20 lg:mt-18">
+              <dl class="grid gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left">
+                <Card
+                  title="Personal and professional growth"
+                  description="You'll have access to various resources and opportunities that will help you develop your skills, knowledge, and experience. Whether through workshops, events, mentorship, or collaboration, you'll be able to grow personally and professionally."
+                />
+                <Card
+                  title="Opportunities to learn and explore"
+                  description="Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions."
+                />
+                <Card
+                  title="A supportive and inclusive environment"
+                  description="One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals."
+                />
+                <Card
+                  title="Develop your personal brand"
+                  description="Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities."
+                />
+                <Card
+                  title="Leadership and mentorship opportunities"
+                  description="If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture."
+                />
+                <Card
+                  title="Networking opportunities"
+                  description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects."
+                />
+              </dl>
+            </div>
           </div>
         </div>
       </div>
