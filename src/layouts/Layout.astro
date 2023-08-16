@@ -29,18 +29,21 @@ const { title } = Astro.props;
       </header>
       <slot />
       <div class="pt-16 text-white/60">
-        <img class="h-5" src={logo.src} alt="provencraft-logo" />
-        <div class="pt-20 pb-24">
-          <p>
-            Designed by <span>
-              <a
-                href="https://www.linkedin.com/in/and%C5%BEela-kate-p%C5%ABli%C5%86a/"
-                class="underline underline-offset-auto"
-              >
-                Andžela Kate Pūliņa</a
-              >
-            </span>
-          </p>
+        <div class="flex justify-between">
+          <div>
+            <img class="h-5" src={logo.src} alt="provencraft-logo" />
+            <p class="pt-20 pb-24">
+              Designed by <span>
+                <a
+                  href="https://www.linkedin.com/in/and%C5%BEela-kate-p%C5%ABli%C5%86a/"
+                  class="underline underline-offset-auto"
+                >
+                  Andžela Kate Pūliņa</a
+                >
+              </span>
+            </p>
+          </div>
+          <div>Copyright © 2023</div>
         </div>
       </div>
     </div>
