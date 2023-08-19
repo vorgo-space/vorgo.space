@@ -6,11 +6,27 @@ import Testimonial from '../components/Testimonial.astro';
 import arina from "../assets/images/arina.webp";
 import janis from "../assets/images/pot.webp";
 import ronalds from "../assets/images/ronalds.webp";
+import ActionButton from '../components/ActionButton.astro';
 ---
 
 <Layout title="Provencraft Community">
-  <main class="min-h-full py-6 lg:px-8 px-6">
+  <main class="grid min-h-full place-items-center py-6 lg:px-8 px-6">
     <div id="center" class="text-center text-white">
+      <section class="flex flex-col items-center my-14">
+        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
+          A Safe and Inclusive Community for Your
+        </div>
+        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy text-[#FF9431]">
+          Personal and Professional Growth
+        </div>
+        <div
+          class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
+        >
+          At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
+          individuals to learn from one another, grow personally and professionally to achieve our goals.
+        </div>
+        <ActionButton />
+      </section>
       <div>
         <div class="mx-auto px-6 lg:px-8">
           <div class="py-24 sm:py-32">
@@ -83,6 +99,20 @@ import ronalds from "../assets/images/ronalds.webp";
           </div>
         </div>
       </div>
+      <section class="flex flex-col items-center my-14 mx-auto max-w-7xl">
+        <div class="font-extrabold text-5xl leading-[60px] tracking-tight font-gilmer-heavy text-center text-white">
+          Elevate <span class="text-[#FF9431]">your</span> journey
+        </div>
+        <div
+          class="w-4/5 my-9 font-semibold text-2xl tracking-normal font-gilmer-medium text-center opacity-70 text-white"
+        >
+          Join our community of forward-thinking professionals.
+        </div>
+        <button
+          class="w-52 rounded-[32px] mt-4 h-14 text-base font-gilmer-heavy font-bold text-white bg-gradient-to-r from-[#FF7A00] to-[#FF9431]"
+          type="button">JOIN DISCORD</button
+        >
+      </section>
       <section class="flex items-center space-x-7 my-14 mx-auto max-w-7xl">
         <Testimonial name="Arina Solovjova" author={arina.src} description="This community has helped me make new friends, learn programming, and connect with a mentor." styles="mt-20"/>
         <Testimonial name="Janis Berzins" author={janis.src} description="This community has given a number of new acquaintances and a mentor, encouraging me to learn programming and also making new friends." styles="mt-30" />
