@@ -2,11 +2,27 @@
 import Layout from '../layouts/Layout.astro';
 import Pillar from '../components/Pillar.astro';
 import Card from '../components/Card.astro';
+import ActionButton from '../components/ActionButton.astro';
 ---
 
 <Layout title="Provencraft Community">
-  <main class="min-h-full py-6 lg:px-8 px-6">
+  <main class="grid min-h-full place-items-center py-6 lg:px-8 px-6">
     <div id="center" class="text-center text-white">
+      <section class="flex flex-col items-center my-14">
+        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
+          A Safe and Inclusive Community for Your
+        </div>
+        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy text-[#FF9431]">
+          Personal and Professional Growth
+        </div>
+        <div
+          class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
+        >
+          At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
+          individuals to learn from one another, grow personally and professionally to achieve our goals.
+        </div>
+        <ActionButton />
+      </section>
       <div>
         <div class="mx-auto px-6 lg:px-8">
           <div class="py-24 sm:py-32">
