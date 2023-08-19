@@ -91,3 +91,33 @@ import ronalds from "../assets/images/ronalds.webp";
     </div>
   </main>
 </Layout>
+
+<script>
+  const spotlight_cards = document.getElementsByClassName("spotlight");
+
+  for (let card of spotlight_cards) {
+
+    // Create spotlight element that gives spotlight effect to cards
+    const spotlight_elem = document.createElement("div");
+    spotlight_elem.className = "pointer-events-none absolute -inset-px opacity-0 transition duration-500";
+    spotlight_elem.style.background = "radial-gradient(300px circle at 0px 0px, rgba(255, 148, 49, 0.16), transparent 80%)";
+
+    // Add card's border radius for smooth appearance
+    const border_radius = window.getComputedStyle(card).borderRadius;
+    spotlight_elem.style.borderRadius = border_radius;
+
+    card.prepend(spotlight_elem);
+
+    card.addEventListener("mousemove", (e) => {
+      let { left, top } = e.currentTarget.getBoundingClientRect();
+      let cursorX = e.clientX - left;
+      let cursorY = e.clientY - top;
+      card.firstChild.style.background = `radial-gradient(250px circle at ${cursorX}px ${cursorY}px, rgba(255, 148, 49, 0.16), transparent 80%)`;
+      card.firstChild.style.opacity = "1";
+    });
+
+    card.addEventListener("mouseleave", (e) => {
+      card.firstChild.style.opacity = "0";
+    });
+  }
+</script>
