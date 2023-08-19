@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Pillar from '../components/Pillar.astro';
 import Card from '../components/Card.astro';
+import ActionButton from '../components/ActionButton.astro';
 ---
 
 <Layout title="Provencraft Community">
@@ -19,11 +20,7 @@ import Card from '../components/Card.astro';
         At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
         individuals to learn from one another, grow personally and professionally to achieve their goals.
       </div>
-      <button
-        class="w-52 my-12 rounded-[32px] h-14 text-base font-gilmer-heavy font-bold text-white"
-        style="background: var(--linear-3, linear-gradient(90deg, #FF7A00 0%, #FF9431 100%));"
-        type="button">JOIN DISCORD</button
-      >
+      <ActionButton />
     </section>
     <div id="center" class="text-center text-white">
       <div>
