@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Pillar from '../components/Pillar.astro';
 import Card from '../components/Card.astro';
+import Testimonial from '../components/Testimonial.astro';
+import arina from "../assets/images/arina.webp";
+import janis from "../assets/images/pot.webp";
+import ronalds from "../assets/images/ronalds.webp";
 ---
 
 <Layout title="Provencraft Community">
@@ -79,6 +83,11 @@ import Card from '../components/Card.astro';
           </div>
         </div>
       </div>
+      <section class="flex items-center space-x-7 my-14 mx-auto max-w-7xl">
+        <Testimonial name="Arina Solovjova" author={arina.src} description="This community has helped me make new friends, learn programming, and connect with a mentor." styles="mt-20"/>
+        <Testimonial name="Janis Berzins" author={janis.src} description="This community has given a number of new acquaintances and a mentor, encouraging me to learn programming and also making new friends." styles="mt-30" />
+        <Testimonial name="Ronalds Palcis" author={ronalds.src} description="I've made new friends, learned programming, and found a mentor thanks to this community, which has also helped me make new acquaintances." styles="mt-20" />
+      </section>
     </div>
   </main>
 </Layout>
