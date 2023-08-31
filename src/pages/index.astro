@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Pillar from '../components/Pillar.astro';
 import Card from '../components/Card.astro';
 import Testimonial from '../components/Testimonial.astro';
-import arina from "../assets/images/arina.webp";
-import janis from "../assets/images/pot.webp";
-import ronalds from "../assets/images/ronalds.webp";
+import arina from '../assets/images/arina.webp';
+import janis from '../assets/images/pot.webp';
+import ronalds from '../assets/images/ronalds.webp';
 import ActionButton from '../components/ActionButton.astro';
 ---
 
@@ -19,9 +19,7 @@ import ActionButton from '../components/ActionButton.astro';
         <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy text-[#FF9431]">
           Personal and Professional Growth
         </div>
-        <div
-          class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
-        >
+        <div class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70">
           At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
           individuals to learn from one another, grow personally and professionally to achieve our goals.
         </div>
@@ -114,23 +112,38 @@ import ActionButton from '../components/ActionButton.astro';
         >
       </section>
       <section class="flex items-center space-x-7 my-14 mx-auto max-w-7xl">
-        <Testimonial name="Arina Solovjova" author={arina.src} description="This community has helped me make new friends, learn programming, and connect with a mentor." styles="mt-20"/>
-        <Testimonial name="Janis Berzins" author={janis.src} description="This community has given a number of new acquaintances and a mentor, encouraging me to learn programming and also making new friends." styles="mt-30" />
-        <Testimonial name="Ronalds Palcis" author={ronalds.src} description="I've made new friends, learned programming, and found a mentor thanks to this community, which has also helped me make new acquaintances." styles="mt-20" />
+        <Testimonial
+          name="Arina Solovjova"
+          author={arina.src}
+          description="This community has helped me make new friends, learn programming, and connect with a mentor."
+          styles="mt-20 text-white/70"
+        />
+        <Testimonial
+          name="Janis Berzins"
+          author={janis.src}
+          description="This community has given a number of new acquaintances and a mentor, encouraging me to learn programming and also making new friends."
+          styles="mt-30"
+        />
+        <Testimonial
+          name="Ronalds Palacis"
+          author={ronalds.src}
+          description="I've made new friends, learned programming, and found a mentor thanks to this community, which has also helped me make new acquaintances."
+          styles="mt-20 text-white/70"
+        />
       </section>
     </div>
   </main>
 </Layout>
 
 <script>
-  const spotlight_cards = document.getElementsByClassName("spotlight");
+  const spotlight_cards = document.getElementsByClassName('spotlight');
 
   for (let card of spotlight_cards) {
-
     // Create spotlight element that gives spotlight effect to cards
-    const spotlight_elem = document.createElement("div");
-    spotlight_elem.className = "pointer-events-none absolute -inset-px opacity-0 transition duration-500";
-    spotlight_elem.style.background = "radial-gradient(300px circle at 0px 0px, rgba(255, 148, 49, 0.16), transparent 80%)";
+    const spotlight_elem = document.createElement('div');
+    spotlight_elem.className = 'pointer-events-none absolute -inset-px opacity-0 transition duration-500';
+    spotlight_elem.style.background =
+      'radial-gradient(300px circle at 0px 0px, rgba(255, 148, 49, 0.16), transparent 80%)';
 
     // Add card's border radius for smooth appearance
     const border_radius = window.getComputedStyle(card).borderRadius;
@@ -138,16 +151,16 @@ import ActionButton from '../components/ActionButton.astro';
 
     card.prepend(spotlight_elem);
 
-    card.addEventListener("mousemove", (e) => {
+    card.addEventListener('mousemove', (e) => {
       let { left, top } = e.currentTarget.getBoundingClientRect();
       let cursorX = e.clientX - left;
       let cursorY = e.clientY - top;
       card.firstChild.style.background = `radial-gradient(250px circle at ${cursorX}px ${cursorY}px, rgba(255, 148, 49, 0.16), transparent 80%)`;
-      card.firstChild.style.opacity = "1";
+      card.firstChild.style.opacity = '1';
     });
 
-    card.addEventListener("mouseleave", (e) => {
-      card.firstChild.style.opacity = "0";
+    card.addEventListener('mouseleave', (e) => {
+      card.firstChild.style.opacity = '0';
     });
   }
 </script>
