@@ -2,11 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Pillar from '../components/Pillar.astro';
 import Card from '../components/Card.astro';
+import Testimonial from '../components/Testimonial.astro';
+import arina from '../assets/images/arina.webp';
+import janis from '../assets/images/pot.webp';
+import ronalds from '../assets/images/ronalds.webp';
 import ActionButton from '../components/ActionButton.astro';
 ---
 
 <Layout title="Provencraft Community">
-  <main class="min-h-full py-6 lg:px-8 px-6">
+  <main class="grid min-h-full py-6 lg:px-8 px-6">
     <div id="center" class="text-center">
       <section class="flex flex-col items-center my-14">
         <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
@@ -15,9 +19,7 @@ import ActionButton from '../components/ActionButton.astro';
         <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy text-[#FF9431]">
           Personal and Professional Growth
         </div>
-        <div
-          class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
-        >
+        <div class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium text-muted">
           At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
           individuals to learn from one another, grow personally and professionally to achieve our goals.
         </div>
@@ -28,7 +30,7 @@ import ActionButton from '../components/ActionButton.astro';
           <div class="py-24 sm:py-32">
             <div class="mx-auto max-w-2xl lg:text-center">
               <p class="text-5xl font-gilmer-heavy">What's <span class="text-[#FF9431]">in it</span> for me?</p>
-              <p class="mt-10 text-xl text-white/70 font-gilmer-medium">
+              <p class="mt-10 text-xl text-muted font-gilmer-medium">
                 Here is the list of awesome reasons for you to join our community to unlock new adventures and
                 opportunities
               </p>
@@ -71,7 +73,7 @@ import ActionButton from '../components/ActionButton.astro';
           <div>
             <div class="py-24 sm:py-32 mx-auto max-w-2xl lg:text-center pb-10">
               <p class="text-5xl font-gilmer-heavy">Community <span class="text-[#FF9431]">pillars</span></p>
-              <p class="mt-10 text-xl text-white/70 font-gilmer-medium">
+              <p class="mt-10 text-xl text-muted font-gilmer-medium">
                 Focused on these four areas, we foster a culture that prizes innovation, entrepreneurial spirit,
                 quality, and diversity.
               </p>
@@ -99,12 +101,30 @@ import ActionButton from '../components/ActionButton.astro';
         <div class="font-extrabold text-5xl leading-[60px] tracking-tight font-gilmer-heavy text-center text-white">
           Elevate <span class="text-[#FF9431]">your</span> journey
         </div>
-        <div
-          class="w-4/5 mt-9 mb-12 font-semibold text-2xl tracking-normal font-gilmer-medium text-center opacity-70 text-white"
-        >
+        <div class="w-4/5 mt-9 mb-12 font-semibold text-2xl tracking-normal font-gilmer-medium text-center text-muted">
           Join our community of forward-thinking professionals.
         </div>
         <ActionButton />
+      </section>
+      <section class="flex items-center space-x-7 my-14 mx-auto max-w-7xl">
+        <Testimonial
+          name="Arina Solovjova"
+          author={arina.src}
+          description="This community has helped me make new friends, learn programming, and connect with a mentor."
+          styles="mt-20"
+        />
+        <Testimonial
+          name="Janis Berzins"
+          author={janis.src}
+          description="This community has given a number of new acquaintances and a mentor, encouraging me to learn programming and also making new friends."
+          styles="mt-30"
+        />
+        <Testimonial
+          name="Ronalds Palacis"
+          author={ronalds.src}
+          description="I've made new friends, learned programming, and found a mentor thanks to this community, which has also helped me make new acquaintances."
+          styles="mt-20"
+        />
       </section>
     </div>
   </main>
