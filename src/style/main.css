@@ -26,3 +26,10 @@
     local('GilmerMedium'),
     url('/fonts/Gilmer-Font/Gilmer\ Medium.otf') format('opentype');
 }
+
+@layer components {
+  .text-muted{
+    @apply text-white text-opacity-70
+  }
+
+}
