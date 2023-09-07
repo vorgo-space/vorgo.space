@@ -26,3 +26,20 @@
     local('GilmerMedium'),
     url('/fonts/Gilmer-Font/Gilmer\ Medium.otf') format('opentype');
 }
+
+
+@layer components {
+  .bg-starry {
+    background-image: url('/src/assets/images/dust-particles.svg');
+    background-color: #010D1A;
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+  }
+}
