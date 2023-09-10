@@ -6,25 +6,25 @@
   font-family: 'gilmer-light';
   src:
     local('GilmerLight'),
-    url('/fonts/Gilmer-Font/Gilmer\ Light.otf') format('opentype');
+    url('/fonts/GilmerLight.otf') format('opentype');
 }
 @font-face {
   font-family: 'gilmer-regular';
   src:
     local('GilmerRegular'),
-    url('/fonts/Gilmer-Font/Gilmer\ Regular.otf') format('opentype');
+    url('/fonts/GilmerRegular.otf') format('opentype');
 }
 @font-face {
   font-family: 'gilmer-heavy';
   src:
     local('GilmerHeavy'),
-    url('/fonts/Gilmer-Font/Gilmer\ Heavy.otf') format('opentype');
+    url('/fonts/GilmerHeavy.otf') format('opentype');
 }
 @font-face {
   font-family: 'gilmer-medium';
   src:
     local('GilmerMedium'),
-    url('/fonts/Gilmer-Font/Gilmer\ Medium.otf') format('opentype');
+    url('/fonts/GilmerMedium.otf') format('opentype');
 }
 
 @layer components {
