@@ -41,5 +41,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
+    z-index: -1;
+  }
+  .bg-grid {
+    background-image:  url('/src/assets/images/grid.svg'), url('/src/assets/images/dust-particles.svg');
+    /* background-color: #010D1A; */
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    z-index: -1;
   }
 }

@@ -8,17 +8,20 @@ import ActionButton from '../components/ActionButton.astro';
 <Layout title="Provencraft Community">
   <main class="min-h-full py-6 lg:px-8 px-6">
     <div id="center" class="text-center">
-      <section class="flex flex-col items-center my-14">
-        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
-          A Safe and Inclusive Community for Your <span class="text-[#FF9431]">Personal and Professional Growth</span>
+      <section class="flex flex-col my-14">
+        <div class="relative">
+          <div class="bg-grid bg-starry"></div>
+          <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
+            A Safe and Inclusive Community for Your <span class="text-[#FF9431]">Personal and Professional Growth</span>
+          </div>
+          <div
+            class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
+          >
+            At the core, we believe by coming together, we can create a supportive and encouraging environment that
+            allows individuals to learn from one another, grow personally and professionally to achieve our goals.
+          </div>
+          <ActionButton />
         </div>
-        <div
-          class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
-        >
-          At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
-          individuals to learn from one another, grow personally and professionally to achieve our goals.
-        </div>
-        <ActionButton />
       </section>
       <div>
         <div class="mx-auto px-6 lg:px-8">
@@ -31,10 +34,7 @@ import ActionButton from '../components/ActionButton.astro';
               </p>
             </div>
             <div class="relative">
-              <div
-                class="bg-starry"
-              >
-              </div>
+              <div class="bg-starry"></div>
               <div class="mt-12 sm:mt-20 lg:mt-18">
                 <dl class="grid gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left">
                   <Card
