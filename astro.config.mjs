@@ -12,12 +12,6 @@ export default defineConfig({
     sitemap(),
     robotsTxt({
       host: true,
-      policy: [
-        {
-          userAgent: '*',
-          disallow: '/',
-        },
-      ],
     }),
   ],
 });
