@@ -36,38 +36,41 @@
     background-position: center;
     height: 100%;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
     z-index: -1;
   }
   .bg-grid {
-    background-image: url('/src/assets/images/grid.svg'), url('/src/assets/images/dust-particles.svg');
+    background-image: url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
     background-color: #010D1A;
-    background-blend-mode: color-dodge;
+    background-blend-mode: normal, color-dodge;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
     height: 100vh;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
+    width: 99vw;
     z-index: -1;
   }
   .bg-pillars {
-    background-image: url('/src/assets/images/pillar-lines.svg'), url('/src/assets/images/mini-grid.svg'), url('/src/assets/images/dust-particles.svg');
+    background-image: url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg');
     background-color: #010D1A;
-    background-blend-mode: normal, color-dodge, color-dodge;
-    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-blend-mode: color-dodge, color-dodge;
+    background-repeat: no-repeat, repeat-y;
     background-position: center;
-    height: 100vh;
+    background-size: contain;
+    height: 100%;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
     z-index: -1;
+    /* -webkit-mask: linear-gradient(#0000, #000 50px); */
   }
 }
