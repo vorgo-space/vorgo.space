@@ -70,13 +70,13 @@
     background-blend-mode: normal, color-dodge, normal;
     background-repeat: repeat-x, repeat-y, no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain, auto, contain;
     height: 100%;
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
+    width: 140%;
     z-index: -1;
     /* -webkit-mask: linear-gradient(#0000, #000 50px); */
   }
