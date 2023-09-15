@@ -1,0 +1,25 @@
+---
+import quote from '../assets/images/quote.svg';
+
+export interface Props {
+  name: string;
+  author: string;
+  description: string;
+  styles: string;
+}
+const { name } = Astro.props;
+const { author } = Astro.props;
+const { description } = Astro.props;
+const { styles } = Astro.props;
+---
+
+<div
+  class={`w-[26rem] h-[26rem] py-12 text-muted hover:text-white flex flex-col items-center border border-solid border-white border-opacity-10 rounded-2xl spotlight relative ${styles}`}
+>
+  <span class="relative inline-block">
+    <img class="h-24 w-24 rounded-full" src={author} alt="author" />
+    <img class="absolute bottom-[-0.25rem] right-[-0.5rem] block" src={quote.src} />
+  </span>
+  <span class="text-lg my-5 font-gilmer-heavy font-noto-sans text-white">{name}</span>
+  <div class="text-center w-80 my-7 font-gilmer-medium">{description}</div>
+</div>
