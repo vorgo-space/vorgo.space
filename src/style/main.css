@@ -32,7 +32,7 @@
     background-image: url('/src/assets/images/dust-particles.svg');
     background-color: #010D1A;
     background-blend-mode: color-dodge;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     height: 100%;
     position: absolute;
@@ -58,15 +58,15 @@
     z-index: -1;
   }
   .bg-pillars {
-    background-image: url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg');
+    background-image: url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
     background-color: #010D1A;
-    background-blend-mode: color-dodge, color-dodge;
-    background-repeat: no-repeat, repeat-y;
+    background-blend-mode: normal, color-dodge, normal;
+    background-repeat: repeat-x, repeat-y, no-repeat;
     background-position: center;
     background-size: contain;
     height: 100%;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
