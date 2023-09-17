@@ -64,11 +64,6 @@
     width: 99vw;
     z-index: -1;
   }
-  @media (min-width: 2500px){
-    .bg-grid {
-      background-image: linear-gradient(to left, #010D1A 15%, transparent 35%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
-    }
-  }
   .bg-pillars {
     background-image: linear-gradient(to right, #010D1A, 10%, transparent), linear-gradient(to left, #010D1A, 10%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
     background-color: #010D1A;
@@ -83,5 +78,13 @@
     transform: translate(-50%, -50%);
     width: 99vw;
     z-index: -1;
+  }
+  @media (min-width: 2300px){
+    .bg-grid {
+      background-image: linear-gradient(to left, #010D1A 15%, transparent 35%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
+    }
+    .bg-pillars {
+      width: 80vw;
+    }
   }
 }
