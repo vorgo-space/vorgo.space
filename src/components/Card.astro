@@ -8,10 +8,10 @@ const { title } = Astro.props;
 const { description } = Astro.props;
 ---
 
-<div class="relative min-h-80 border border-solid border-white border-opacity-10 rounded-2xl spotlight">
-  <div class="pr-6 pt-9 pl-4 mb-8 h-full grid grid-rows-3">
-    <div class="text-2xl font-gilmer-heavy">{title}</div>
-    <div class="text-base text-muted font-gilmer-regular row-span-2 hover:text-white">
+<div class="relative h-80 border border-solid border-white border-opacity-10 rounded-2xl spotlight">
+  <div class="pr-6 pt-7 pl-4 h-full grid grid-rows-4 text-muted hover:text-white">
+    <div class="text-2xl text-white font-gilmer-heavy">{title}</div>
+    <div class="text-base font-gilmer-regular row-span-3">
       {description}
     </div>
   </div>

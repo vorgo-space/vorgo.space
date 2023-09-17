@@ -12,18 +12,20 @@ import ActionButton from '../components/ActionButton.astro';
 <Layout title="Provencraft Community">
   <main class="grid min-h-full py-6 lg:px-8 px-6">
     <div id="center" class="text-center">
-      <section class="flex flex-col items-center my-14">
-        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
-          A Safe and Inclusive Community for Your
+      <section class="flex flex-col my-14">
+        <div class="relative">
+          <div class="bg-grid"></div>
+          <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy">
+            A Safe and Inclusive Community for Your <span class="text-[#FF9431]">Personal and Professional Growth</span>
+          </div>
+          <div
+            class="px-16 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium opacity-70"
+          >
+            At the core, we believe by coming together, we can create a supportive and encouraging environment that
+            allows individuals to learn from one another, grow personally and professionally to achieve our goals.
+          </div>
+          <ActionButton />
         </div>
-        <div class="font-extrabold text-6xl leading-[82px] tracking-tight font-gilmer-heavy text-[#FF9431]">
-          Personal and Professional Growth
-        </div>
-        <div class="w-4/5 my-14 font-semibold text-2xl leading-[43.5px] tracking-normal font-gilmer-medium text-muted">
-          At the core, we believe by coming together, we can create a supportive and encouraging environment that allows
-          individuals to learn from one another, grow personally and professionally to achieve our goals.
-        </div>
-        <ActionButton />
       </section>
       <div>
         <div class="mx-auto px-6 lg:px-8">
@@ -35,43 +37,48 @@ import ActionButton from '../components/ActionButton.astro';
                 opportunities
               </p>
             </div>
-            <div class="mt-12 sm:mt-20 lg:mt-18">
-              <dl class="grid gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16 text-left">
-                <Card
-                  title="Personal and professional growth"
-                  description="You'll have access to various resources and opportunities that will help you develop your skills, knowledge, and experience. Whether through workshops, events, mentorship, or collaboration, you'll be able to grow personally and professionally."
-                />
-                <Card
-                  title="Opportunities to learn and explore"
-                  description="Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions."
-                />
-                <Card
-                  title="A supportive and inclusive environment"
-                  description="One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals."
-                />
-                <Card
-                  title="Develop your personal brand"
-                  description="Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities."
-                />
-                <Card
-                  title="Leadership and mentorship opportunities"
-                  description="If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture."
-                />
-                <Card
-                  title="Networking opportunities"
-                  description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects."
-                />
-              </dl>
+            <div class="relative">
+              <div class="bg-starry"></div>
+              <div class="mt-12 sm:mt-20 lg:mt-18">
+                <dl class="grid gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-3 sm:grid-cols-2 text-left">
+                  <Card
+                    title="Personal and professional growth"
+                    description="You'll have access to various resources and opportunities that will help you develop your skills, knowledge, and experience. Whether through workshops, events, mentorship, or collaboration, you'll be able to grow personally and professionally."
+                  />
+                  <Card
+                    title="Opportunities to learn and explore"
+                    description="Our community is a space to try new things and explore new ideas. We encourage our members to take risks, think outside the box, and learn from one another. You'll have access to a wealth of knowledge and resources to help you expand your horizons and discover new passions."
+                  />
+                  <Card
+                    title="A supportive and inclusive environment"
+                    description="One of the most significant benefits is the sense of belonging and support you'll feel. We prioritize creating a safe and inclusive space where everyone feels welcome and valued. You'll be able to connect with like-minded individuals who share your interests and goals."
+                  />
+                  <Card
+                    title="Develop your personal brand"
+                    description="Joining the community and sharing your knowledge and expertise can help you develop a personal brand by establishing yourself as a thought leader, increasing your visibility, building trust and credibility, and leading to new opportunities."
+                  />
+                  <Card
+                    title="Leadership and mentorship opportunities"
+                    description="If you are a seasoned professional, you likely have much to offer regarding leadership and mentorship. You can mentor younger members, lead community projects, or even start your venture."
+                  />
+                  <Card
+                    title="Networking opportunities"
+                    description="By joining this community, you'll have the chance to connect with other professionals in your field, share your expertise, and learn from others. You may even meet potential collaborators or partners for future projects."
+                  />
+                </dl>
+              </div>
             </div>
           </div>
-          <div>
-            <div class="py-24 sm:py-32 mx-auto max-w-2xl lg:text-center pb-10">
+          <div class="relative">
+            <div class="bg-starry"></div>
+            <div class="py-16 sm:py-32 mx-auto max-w-2xl lg:text-center pb-10">
               <p class="text-5xl font-gilmer-heavy">Community <span class="text-[#FF9431]">pillars</span></p>
               <p class="mt-10 text-xl text-muted font-gilmer-medium">
                 Focused on these four areas, we foster a culture that prizes innovation, entrepreneurial spirit,
                 quality, and diversity.
               </p>
             </div>
+            <div class="bg-pillars"></div>
             <Pillar
               title="Engineering"
               description="Being part of the engineering community empowers individuals to use technology to solve real-world problems, collaborate with like-minded individuals, and stay up-to-date with new technologies and trends."
@@ -91,14 +98,19 @@ import ActionButton from '../components/ActionButton.astro';
           </div>
         </div>
       </div>
-      <section class="flex flex-col items-center my-14 mx-auto max-w-7xl">
-        <div class="font-extrabold text-5xl leading-[60px] tracking-tight font-gilmer-heavy text-center text-white">
-          Elevate <span class="text-[#FF9431]">your</span> journey
+      <section class="flex flex-col items-center my-36 mx-auto max-w-7xl">
+        <div class="relative">
+          <div class="bg-starry h-[35vh]"></div>
+          <div class="font-extrabold text-5xl leading-[60px] tracking-tight font-gilmer-heavy text-center text-white">
+            Elevate <span class="text-[#FF9431]">your</span> journey
+          </div>
+          <div
+            class="px-16 mt-9 mb-12 font-semibold text-2xl tracking-normal font-gilmer-medium text-center opacity-70 text-white"
+          >
+            Join our community of forward-thinking professionals.
+          </div>
+          <ActionButton />
         </div>
-        <div class="w-4/5 mt-9 mb-12 font-semibold text-2xl tracking-normal font-gilmer-medium text-center text-muted">
-          Join our community of forward-thinking professionals.
-        </div>
-        <ActionButton />
       </section>
     </div>
   </main>
