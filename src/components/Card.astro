@@ -15,10 +15,10 @@ const { description } = Astro.props;
   <div
     id="card-content"
     class="grid h-full pr-6 pt-7 pl-4 text-muted hover:text-white mb-6"
-    style="grid-template-rows: 1fr 2fr;"
+    style="grid-template-rows: 1fr 3fr;"
   >
-    <div class="text-2xl text-white font-gilmer-heavy">{title}</div>
-    <div class="text-base font-gilmer-regular">
+    <div class="md:text-2xl text-xl text-white font-gilmer-heavy">{title}</div>
+    <div class="text-base font-gilmer-regular lg:pt-2">
       {description}
     </div>
   </div>
