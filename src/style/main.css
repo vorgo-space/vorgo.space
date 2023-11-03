@@ -83,18 +83,21 @@
   }
 
   @media (max-width: 768px) {
-      .bg-grid {
-        background-image: linear-gradient(to left, #010D1A 5%, transparent 70%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
-        background-repeat: repeat-y;
-        top: 35%;
-        left: 0;
-        transform: translate(0, -50%);
-        background-position: right center;
-      }
+    .bg-starry {
+      top: 40%;
+    }
 
-      .bg-pillars {
-        background-repeat: repeat-y;
-      }
+    .bg-grid {
+      background-image: linear-gradient(to left, #010D1A 5%, transparent 70%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
+      top: 45%;
+      left: 0;
+      transform: translate(0, -50%);
+      background-position: right center;
+    }
+
+    .bg-pillars {
+      background-repeat: repeat-y;
+    }
   }
 
   @media (min-width: 2300px){
