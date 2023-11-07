@@ -70,7 +70,7 @@
     background-image: linear-gradient(to right, #010D1A, 40%, transparent), linear-gradient(to left, #010D1A, 40%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
     background-color: #010D1A;
     background-blend-mode: normal, normal, normal, color-dodge, normal;
-    background-repeat: no-repeat, no-repeat, no-repeat, repeat-y, no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: auto, auto, contain, auto, contain;
     height: 100%;
