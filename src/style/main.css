@@ -95,10 +95,6 @@
       background-position: right center;
     }
 
-    .bg-pillars {
-      background-repeat: repeat-y;
-    }
-
     .spotlight {
       background: radial-gradient(250px circle at 0px 0px, rgba(255, 148, 49, 0.16), transparent 80%);
       opacity: 1;
