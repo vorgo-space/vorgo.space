@@ -70,7 +70,7 @@
     background-color: #010D1A;
     background-blend-mode: normal, normal, normal, color-dodge, normal;
     background-position: center;
-    background-size: auto, auto, contain, auto, contain;
+    background-size: auto, auto, cover, auto, contain;
     height: 100%;
     position: absolute;
     top: 57%;
@@ -102,7 +102,7 @@
     }
 
     .bg-pillars{
-    background-image: linear-gradient(to right, #010D1A, 15%, transparent), linear-gradient(to left, #010D1A, 15%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/packed-dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
+      background-image: linear-gradient(to right, #010D1A, 15%, transparent), linear-gradient(to left, #010D1A, 15%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/packed-dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
     }
   }
 
