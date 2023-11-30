@@ -36,10 +36,9 @@
 
 @layer components {
   .bg-starry {
-    background-image: url('/src/assets/images/dust-particles.svg');
+    background-image: url('/src/assets/images/packed-dust-particles.svg');
     background-color: #010D1A;
     background-blend-mode: color-dodge;
-    background-repeat: repeat-y;
     background-position: center;
     height: 100%;
     position: absolute;
@@ -51,28 +50,27 @@
   }
 
   .bg-grid {
-    background-image: linear-gradient(to left, #010D1A 5%, transparent 20%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
+    background-image: linear-gradient(to left, #010D1A 5%, transparent 20%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/packed-dust-particles.svg');
     background-color: #010D1A;
     background-blend-mode: normal, normal, color-dodge;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: auto;
     height: 100vh;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 99vw;
+    width: 90vw;
     z-index: -1;
   }
 
   .bg-pillars {
-    background-image: linear-gradient(to right, #010D1A, 10%, transparent), linear-gradient(to left, #010D1A, 10%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
+    background-image: linear-gradient(to right, #010D1A, 40%, transparent), linear-gradient(to left, #010D1A, 40%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/packed-dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
     background-color: #010D1A;
     background-blend-mode: normal, normal, normal, color-dodge, normal;
-    background-repeat:  no-repeat, no-repeat, repeat-x, repeat-y, no-repeat;
     background-position: center;
-    background-size: auto, auto, contain, auto, contain;
+    background-size: auto, auto, cover, auto, contain;
     height: 100%;
     position: absolute;
     top: 57%;
@@ -84,19 +82,17 @@
 
   @media (max-width: 768px) {
     .bg-starry {
-      top: 40%;
+      top: 45%;
+      background-repeat: repeat-y;
     }
 
     .bg-grid {
-      background-image: linear-gradient(to left, #010D1A 5%, transparent 70%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
-      top: 45%;
+      background-image: linear-gradient(to left, #010D1A 5%, transparent 30%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/packed-dust-particles.svg');
+      top: 50%;
       left: 0;
       transform: translate(0, -50%);
       background-position: right center;
-    }
-
-    .bg-pillars {
-      background-repeat: repeat-y;
+      background-size: auto, cover, auto;
     }
 
     .spotlight {
@@ -104,14 +100,15 @@
       opacity: 1;
       border-radius: 1rem;
     }
+
+    .bg-pillars{
+      background-image: linear-gradient(to right, #010D1A, 15%, transparent), linear-gradient(to left, #010D1A, 15%, transparent), url('/src/assets/images/mini-grid-faded.svg'), url('/src/assets/images/packed-dust-particles.svg'), url('/src/assets/images/pillars-lines-faded.svg');
+    }
   }
 
   @media (min-width: 2300px){
     .bg-grid {
-      background-image: linear-gradient(to left, #010D1A 15%, transparent 35%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/dust-particles.svg');
-    }
-    .bg-pillars {
-      width: 80vw;
+      background-image: linear-gradient(to left, #010D1A 15%, transparent 35%), url('/src/assets/images/hero-grid.svg'), url('/src/assets/images/packed-dust-particles.svg');
     }
   }
 }
