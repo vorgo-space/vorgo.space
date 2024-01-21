@@ -5,7 +5,7 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://community.provencraft.com',
+  site: 'https://vorgo.space',
   compressHTML: true,
   integrations: [
     tailwind(),
